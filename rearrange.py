@@ -1,8 +1,7 @@
 import random
 import sys
 
-arg = sys.argv
-del arg[0]
+arg = sys.argv[1:]
 arg_length = len(arg) - 1
 
 def randomize_words():
