@@ -1,7 +1,7 @@
 ALGORITHMS
 
 (FROM WARMUP)
-1. PLUS MINUS:
+1. PLUS MINUS - 98.10%
 import sys
 
 n = int(raw_input().strip())
@@ -25,7 +25,7 @@ print(zero_count / n)
 
 --------------------------------------------------------------
 (FROM IMPLEMENTATION)
-2. ANGRY PROFESSOR
+2. ANGRY PROFESSOR - 94.62%
 
 import sys
 
@@ -47,3 +47,5 @@ for a0 in xrange(t):
     else:
         print('YES')
 --------------------------------------------------------------
+(FROM IMPLEMENTATION)
+3. BETWEEN TWO SETS - 87.43%
