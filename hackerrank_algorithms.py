@@ -49,3 +49,25 @@ for a0 in xrange(t):
 --------------------------------------------------------------
 (FROM IMPLEMENTATION)
 3. BETWEEN TWO SETS - 87.43%
+
+import sys
+
+
+n,m = raw_input().strip().split(' ')
+n,m = [int(n),int(m)]
+a = map(int,raw_input().strip().split(' '))
+b = map(int,raw_input().strip().split(' '))
+
+total_x = 0
+
+for number in a:
+    stored_number_a = number
+    if stored_number_a < number:
+        stored_number_a == number
+
+for number in set(b):
+    stored_number_x = number
+    if stored_number_x / stored_number_a:
+        total_x += 1
+
+print(total_x)
