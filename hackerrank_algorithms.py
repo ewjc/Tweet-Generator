@@ -53,25 +53,35 @@ for a0 in xrange(t):
 
 import sys
 
-
 n,m = raw_input().strip().split(' ')
 n,m = [int(n),int(m)]
 a = map(int,raw_input().strip().split(' '))
 b = map(int,raw_input().strip().split(' '))
 
-total_x = 0
+total_x_numbers = 0
 
-for number in a:
-    stored_number_a = number
-    if stored_number_a < number:
-        stored_number_a == number
+def loop_a(x):
+    for a_number in a:
+        if x % a_number == 0:
+            continue
+        else:
+            return False
+    return True
 
-for number in set(b):
-    stored_number_x = number
-    if stored_number_x / stored_number_a:
-        total_x += 1
+def loop_b(x):
+    for b_number in b:
+        if b_number % x == 0:
+            continue
+        else:
+            return False
+    return True
 
-print(total_x)
+for x in range(a[0], b[-1] + 1):
+    if loop_a(x):
+        if loop_b(x):
+            total_x_numbers += 1
+
+print(total_x_numbers)
 
 --------------------------------------------------------------
 (FROM IMPLEMENTATION)
