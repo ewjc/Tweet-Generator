@@ -1,16 +1,16 @@
 OOP Challange!
 
-Problem 1:
+Problem 1: --------------------------------------------------------------
 def sleep(name):
     print('{name} sleeps for 8 hours').format(name=name)
 
-Problem 2:
+Problem 2:--------------------------------------------------------------
 def eat(name, food):
     print('{name} eats {food}').format(name=name, food=food)
     if food == favoriteFood:
         print('YUM! {name} wants more {food}').format(name=name, food=food)
 
-Problem 3:
+Problem 3:--------------------------------------------------------------
 class Tiger(object):
     # Implement the initializer method here
     def __init__(self, name):
@@ -29,8 +29,24 @@ class Tiger(object):
         name = self.name
         print('{name} sleeps for 8 hours').format(name=name)
 
-Problem 4:
-Problem 5:
-Problem 6:
-Problem 7:
-Problem 8:
+Problem 4:--------------------------------------------------------------
+class Bear(object):
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self, food):
+        name = self.name
+        self.food = food
+        favoriteFood = 'fish'
+        print('{name} eats {food}').format(name=name, food=food)
+        if food == favoriteFood:
+            print('YUM! {name} wants more {food}').format(name=name, food=food)
+
+    def sleep(self):
+        name = self.name
+        print('{name} hibernates for 4 months').format(name=name)
+
+Problem 5:--------------------------------------------------------------
+Problem 6:--------------------------------------------------------------
+Problem 7:--------------------------------------------------------------
+Problem 8:--------------------------------------------------------------
