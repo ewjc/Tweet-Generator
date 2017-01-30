@@ -11,6 +11,23 @@ def eat(name, food):
         print('YUM! {name} wants more {food}').format(name=name, food=food)
 
 Problem 3:
+class Tiger(object):
+    # Implement the initializer method here
+    def __init__(self, name):
+        self.name = name
+
+    # Copy your eat function here and modify it to work as a method
+    def eat(self, food):
+        name = self.name
+        self.food = food
+        favoriteFood = 'meat'
+        print('{name} eats {food}').format(name=name, food=food)
+        if food == favoriteFood:
+            print('YUM! {name} wants more {food}').format(name=name, food=food)
+    # Copy your sleep function here and modify it to work as a method
+    def sleep(self):
+        name = self.name
+        print('{name} sleeps for 8 hours').format(name=name)
 
 Problem 4:
 Problem 5:
