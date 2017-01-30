@@ -3,6 +3,7 @@ import sys
 
 arg = sys.argv[1:]
 arg_length = len(arg) - 1
+print(arg)
 
 def randomize_words():
     rand_index = random.randint(0, arg_length)
