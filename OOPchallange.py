@@ -80,7 +80,76 @@ class Bear(Animal):
     def sleep(self):
         name = self.name
         print('{name} hibernates for 4 months').format(name=name)
-        
+
 Problem 6:--------------------------------------------------------------
+class Animal(object):
+    def __init__(self, name, favoriteFood):
+        self.name = name
+        self.favoriteFood = favoriteFood
+
+    def eat(self, food):
+        name = self.name
+        favoriteFood = self.favoriteFood
+        self.food = food
+        print('{name} eats {food}').format(name=name, food=food)
+        if food == favoriteFood:
+            print('YUM! {name} wants more {food}').format(name=name, food=food)
+
+    def sleep(self):
+        name = self.name
+        print('{name} sleeps for 8 hours').format(name=name)
+
+class Tiger(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "meat")
+
+class Bear(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "fish")
+
+    def sleep(self):
+        name = self.name
+        print('{name} hibernates for 4 months').format(name=name)
+
+class Unicorn(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "marshmallows")
+
+    def sleep(self):
+        name = self.name
+        print('{name} sleeps in a cloud').format(name=name)
+
+class Giraffe(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "leaves")
+
+    def eat(self, food):
+        name = self.name
+        favoriteFood = self.favoriteFood
+        self.food = food
+        print('{name} eats {food}').format(name=name, food=food)
+        if food == favoriteFood:
+            print('YUM! {name} wants more {food}').format(name=name, food=food)
+        elif food is not favoriteFood:
+            print('YUCK! {name} spits out {food}').format(name=name, food=food)
+
+class Bee(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name, "pollen")
+
+    def eat(self, food):
+        name = self.name
+        favoriteFood = self.favoriteFood
+        self.food = food
+        print('{name} eats {food}').format(name=name, food=food)
+        if food == favoriteFood:
+            print('YUM! {name} wants more {food}').format(name=name, food=food)
+        elif food is not favoriteFood:
+            print('YUCK! {name} spits out {food}').format(name=name, food=food)
+
+    def sleep(self):
+        name = self.name
+        print('{name} never sleeps').format(name=name)
+        
 Problem 7:--------------------------------------------------------------
 Problem 8:--------------------------------------------------------------
