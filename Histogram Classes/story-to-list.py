@@ -1,5 +1,3 @@
-import sys
-
 def read_story(text):
     with open(text) as bible:
         story = bible.read()
@@ -25,7 +23,11 @@ def trim_punctuation(word_list):
             word_list1.append(trimmed_word)
     return word_list1
 
-def
+def story_to_list(text):
+    word_list = read_story(text)
+    filtered_word_list = trim_punctuation(word_list)
+    return filtered_word_list
 
 if __name__ == '__main__':
     text = 'Bible.txt'
+    story_to_list(text)
