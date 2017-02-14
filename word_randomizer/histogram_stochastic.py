@@ -1,16 +1,22 @@
 import sys
 import random
-import urllib
+import histogram
 
-link = 'http://www.gutenberg.org/cache/epub/10/pg10.txt'
+# def return_random_word(story_list):
+#     rand_index = random.randint(0, len(story))
+#     word = story[rand_index]
+#     for word in
+#     print(word)
 
-text_file = urllib.urlopen(link)
-story_list = text_file.read()
-story = story_list.split()
-
-def return_random_word(story):
-    rand_index = random.randint(0, len(story))
-    word = story[rand_index]
-    print(word)
-
-return_random_word(story)
+def sample_random_word(dict_unique_words):
+    rand_index = random.randint(1, sum(dict_unique_words))
+    probability_count = 0
+    for word, frequency in dict_unique_words:
+        if rand_index >= probability_count:
+            probability_count += frequency
+        return word
+        
+if __name__ == '__main__':
+    histogram()
+    frequency()
+    return_random_word
